@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Inder|Indie+Flower');
+
+#header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    /*z-index: 2;*/ 
+}
+
+.nav{
+    float: right;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+.nav ul{
+    padding:0;
+    margin: 0;
+}
+.nav ul li{
+    float: left;
+    list-style: none;
+    border: 1px solid #eee;
+}
+
+.nav ul li a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    background-color: whitesmoke;
+    color: olive;
+}
+
+#branding{
+    width: 200px;
+    height: 50px;
+    float: left;
+    background: url("https://picsum.photos/200/50") no-repeat center center;
+    background-size: 200px;
+}
+
+
+
+#minimenu {
+    display: none;
+    float: right;
+    margin-right: 20px;
+    font-size: 30px;
+    margin-top: 5px;
+    cursor:pointer;
+}
+
+.section:nth-child(even){
+    background-color: khaki;
+}
+
+.section {
+    min-height: 600px;
+    padding-top: 100px;
+    overflow: hidden;
+    /*position: relative;*/
+    font-family: 'Indie Flower', cursive;
+    background-color: lightgray;
+}
+
+.section article {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+#Home {
+    background: url("https://picsum.photos/5000?") no-repeat;
+    background-size:cover;
+}
+
+#Extra {
+    background: url("https://picsum.photos/5472/3648?image=1055") no-repeat;
+    background-size:contain;
+}
+
+#Products {
+    background: url("https://picsum.photos/5760/3840?image=1067") no-repeat;
+    background-size:contain;
+}
+
+@media screen and (max-width:980px) {
+
+    
+}
+
+@media screen and (max-width:650px) {
+
+    #minimenu{
+        display: block; ! important;
+        float: right;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+    }
+    .nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
